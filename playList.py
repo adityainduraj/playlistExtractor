@@ -60,7 +60,7 @@ def ensure_directory_exists(directory):
     os.makedirs(directory, exist_ok=True)
 
 def save_song_artist_list(chapters, file_name):
-    directory = os.path.expanduser("~/playlistGen/playlists/")
+    directory = os.path.expanduser("~/Documents/projects/playlistGen/playlists/")
     ensure_directory_exists(directory)
     full_path = os.path.join(directory, file_name)
     with open(full_path, 'w') as f:
