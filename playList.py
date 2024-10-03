@@ -72,9 +72,9 @@ def save_song_artist_list(chapters, file_name):
     ensure_directory_exists(directory)
     full_path = os.path.join(directory, file_name)
     with open(full_path, "w") as f:
-        f.write(
-            f"# {os.path.splitext(file_name)[0]}\n\n"
-        )  # Write the title without extension
+        #f.write(
+        #    f"# {os.path.splitext(file_name)[0]}\n\n"
+        #)  # Write the title without extension
         f.write("## Playlist\n\n")  # Add a subtitle
         for index, chapter in enumerate(chapters, start=1):
             title = chapter.get("title", "")
